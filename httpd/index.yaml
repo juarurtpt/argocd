@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  httpd:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-01-10T12:23:20.17881442+01:00"
+    description: A Helm chart for Kubernetes
+    digest: 6b8170500d1d1b336dc058b7664edb80dd28de980f406e6ad3120d3f9bc90c40
+    name: httpd
+    type: application
+    urls:
+    - https://juarurtpt.github.io/argocd/httpd-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-01-10T12:23:20.178280907+01:00"

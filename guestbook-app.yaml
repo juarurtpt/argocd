@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: guestbook
+  namespace: argocd #Tiene que ser el mismo donde ArgoCD esté instalado
+spec:
+  project: testing
+  source:
+    repoURL: 'https://github.com/juarurtpt/argocd.git'
+    path: ./official/examples/guestbook
+    targetRevision: main
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: testing
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
